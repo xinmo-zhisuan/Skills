@@ -5,7 +5,7 @@ A Claude Code skill that fetches **authentic** BibTeX entries from Crossref and 
 ## Demo
 
 <!-- 将截图放到 assets/ 文件夹后取消注释下面的行 -->
-[fetch-bibtex demo](assets/demo.png)
+![fetch-bibtex demo](assets/demo.png)
 
 ## What it does
 
