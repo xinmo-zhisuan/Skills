@@ -4,7 +4,6 @@ A Claude Code skill that fetches **authentic** BibTeX entries from Crossref and 
 
 ## Demo
 
-<!-- 将截图放到 assets/ 文件夹后取消注释下面的行 -->
 ![fetch-bibtex demo](assets/demo.png)
 
 ## What it does
@@ -17,15 +16,17 @@ When you give it a fuzzy paper title, it:
 
 ## Install
 
-Copy (or symlink) this folder into your Claude Code skills directory:
+```bash
+npm install fetch-bibtex
+```
+
+Or install directly from GitHub:
 
 ```bash
-# Option 1: copy
-cp -r fetch-bibtex ~/.claude/skills/
-
-# Option 2: symlink (easier to update)
-ln -s $(pwd)/fetch-bibtex ~/.claude/skills/fetch-bibtex
+npm install xinmo-zhisuan/Skills#main:fetch-bibtex
 ```
+
+The `postinstall` script will automatically copy the skill files into `~/.claude/skills/fetch-bibtex/`.
 
 ## Requirements
 
@@ -52,7 +53,9 @@ Find the BibTeX for "Deep Residual Learning for Image Recognition"
 fetch-bibtex/
 ├── SKILL.md                  # Skill definition
 ├── scripts/
-│   └── bibtex_fetcher.py     # Core search script (Crossref + arXiv)
+│   ├── bibtex_fetcher.py     # Core search script (Crossref + arXiv)
+│   └── install.js            # npm postinstall script
+├── package.json
 ├── README.md
 ├── LICENSE
 └── .gitignore

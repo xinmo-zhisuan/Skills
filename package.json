@@ -1,0 +1,31 @@
+{
+  "name": "fetch-bibtex",
+  "version": "1.0.0",
+  "description": "Claude Code skill: fetch authentic BibTeX entries from Crossref and arXiv APIs — never hallucinated.",
+  "main": "scripts/install.js",
+  "scripts": {
+    "postinstall": "node scripts/install.js"
+  },
+  "files": [
+    "SKILL.md",
+    "scripts/bibtex_fetcher.py",
+    "scripts/install.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "claude",
+    "claude-code",
+    "skill",
+    "bibtex",
+    "crossref",
+    "arxiv",
+    "citation"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xinmo-zhisuan/Skills.git",
+    "directory": "fetch-bibtex"
+  }
+}
